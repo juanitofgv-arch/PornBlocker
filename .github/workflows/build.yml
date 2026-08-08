@@ -44,7 +44,7 @@ jobs:
           cd "$PROJECT_DIR"
           
           # Forzamos la compatibilidad de librerias 
-          ./gradlew assembleDebug --warning-mode all
+          gradle assembleDebug --warning-mode all
         
       - name: Guardar APK
         uses: actions/upload-artifact@v4
